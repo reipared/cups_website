@@ -11,7 +11,7 @@
     src: url(fonts/PlusJakartaSans-LightItalic.woff2);
 }
 
-.container {
+.body {
     margin: 0;
 }
 
@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.header-logo {
+.headerLogo {
     font-family: Jost;
     font-weight: bold;
     font-size: 24px;
@@ -29,7 +29,7 @@
     float: left;
 }
 
-.right-links {
+.rightLinks {
     font-family: Jost;
     color: #E5E7EB;
     font-size: 18px;
@@ -39,46 +39,127 @@
     padding: 15px;
 }
 
-.header-title {
+.headerContainer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: space-around;
+    float: left;
+    margin: 50px;
+    width: 50%;
+}
+
+.headerTitle {
     font-family: Supreme;
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
     display: flex;
-    flex-wrap: wrap;
-    float: left;
+    margin-left: 15px;
 }
 
 .text {
     font-family: Jost;
     font-size: 18px;
     color: #E5E7EB;
+    margin-left: 15px;
     display: flex;
     flex-wrap: wrap;
-    float: left;
+    
 }
 
-.buttons {
+/* .signUp {
     font-family: Roundo;
     background-color: #3882F6;
+    border-radius: 8px;
     color: #E5E7EB;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition-duration: 0.4s;
+    margin: 15px;
+}
+
+.signUp:hover {
+    background-color: black;
+    color: hotpink;
+} */
+
+.signUp {
+    margin: 15px;
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+    -webkit-animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+            animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.signUp:hover {
+    -webkit-animation: gradient 3s infinite;
+            animation: gradient 3s infinite;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.signUp:active {
+    -webkit-animation: gradient 3s infinite;
+            animation: gradient 3s infinite;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.headerContainer2 {
+    margin: 15px;
     display: flex;
-    float: left;
     
 }
 
-.images {
-    display: flex;
-    float: right;
-    flex-direction: column-reverse;
-    
-}
 
 /*.info {
 
 } */
 
-.text-info {
+.textInfo {
     font-family: Supreme;
     color: #1f2937;
     font-size: 36px;
@@ -86,11 +167,11 @@
 
 }
 
-.info-images {
+.infoImages {
     display: flex;
 }
 
-.pic-text {
+.picText {
     font-size: 18px;
     color: #1f2937;
     display: flex;
@@ -100,13 +181,13 @@
     background-color: #E5E7EB;
 }
 
-.big-text {
+.bigText {
     font-family: JakartaLightItalic;
     color: #1f2937;
     font-size: 36px;
 }
 
-.sign-quotes {
+.signQuotes {
     color: #1f2937;
     font-size: 18px;
     display: flex;
@@ -115,12 +196,12 @@
 .box {
     background-color: #3882F6;
 }
-.box-text {
+.boxText {
     color: #E5E7EB;
     font-size: 18px;
 }
 
-.box-text-small {
+.boxTextSmall {
     color: #E5E7EB;
     font-size: 18px;
 }
