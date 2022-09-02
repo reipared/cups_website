@@ -17,6 +17,7 @@
 
 .header {
     background-color: #1f2937;
+    position: relative;
 }
 
 .header-logo {
@@ -24,19 +25,18 @@
     font-weight: bold;
     font-size: 24px;
     color: #f9faf8;
-    display: flex;
-    flex-direction: column;
-    
+    padding: 15px;
+    float: left;
 }
 
 .right-links {
     font-family: Jost;
     color: #E5E7EB;
-    font-size: 18px;;
+    font-size: 18px;
+    gap: 15px;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    
+    padding: 15px;
 }
 
 .header-title {
@@ -44,23 +44,34 @@
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
 }
 
 .text {
     font-family: Jost;
     font-size: 18px;
     color: #E5E7EB;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
 }
 
 .buttons {
     font-family: Roundo;
     background-color: #3882F6;
     color: #E5E7EB;
+    display: flex;
+    float: left;
     
 }
 
 .images {
     display: flex;
+    float: right;
+    flex-direction: column-reverse;
+    
 }
 
 /*.info {
