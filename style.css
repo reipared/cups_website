@@ -167,38 +167,118 @@
 
 .quotes {
     background-color: #E5E7EB;
-    
+    padding: 100px;
 }
 
 .bigText {
     font-family: JakartaLightItalic;
     color: #1f2937;
     font-size: 36px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .signQuotes {
     color: #1f2937;
     font-size: 18px;
+    font-weight: bold;
     display: flex;
+    justify-content: flex-end;
+    
+}
+
+.boxContainer {
+    background-color: #ffffff;
 }
 
 .box {
-    background-color: #3882F6;
+    background-color: #3882f6;
+    padding: 100px;
+    border-radius: 30px;
 }
 .boxText {
+    background-color: #3882f6;
     color: #E5E7EB;
     font-size: 18px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .boxTextSmall {
+    background-color: #3882f6;
     color: #E5E7EB;
     font-size: 18px;
+    display: flex;
+    align-content: flex-start;
+}
+
+.contButton {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    
+}
+
+.botButton {
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.botButton:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.botButton:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.botButton:hover::before {
+    filter: blur(20px);
+}
+
+.botButton:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 
 .footer {
     background-color: #1f2937;
     color: #E5E7EB;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
 }
 
 ul {
