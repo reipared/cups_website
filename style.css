@@ -68,25 +68,6 @@
     
 }
 
-/* .signUp {
-    font-family: Roundo;
-    background-color: #3882F6;
-    border-radius: 8px;
-    color: #E5E7EB;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    transition-duration: 0.4s;
-    margin: 15px;
-}
-
-.signUp:hover {
-    background-color: black;
-    color: hotpink;
-} */
-
 .signUp {
     margin: 15px;
     background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
@@ -151,34 +132,42 @@
 .headerContainer2 {
     margin: 15px;
     display: flex;
-    
+    padding: 50px;
 }
 
 
-/*.info {
-
-} */
+.info {
+    margin: 100px;
+}
 
 .textInfo {
     font-family: Supreme;
     color: #1f2937;
     font-size: 36px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
 
 }
 
 .infoImages {
     display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    
 }
 
 .picText {
     font-size: 18px;
     color: #1f2937;
     display: flex;
+    justify-content: space-around;
+    
 }
 
 .quotes {
     background-color: #E5E7EB;
+    
 }
 
 .bigText {
