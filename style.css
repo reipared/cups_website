@@ -1,3 +1,4 @@
+/* custom fonts */
 @font-face {
     font-family: Roundo;
     src: url(fonts/Roundo-Regular.woff2);
@@ -11,15 +12,18 @@
     src: url(fonts/PlusJakartaSans-LightItalic.woff2);
 }
 
+/* for the entire document*/
 .body {
     margin: 0;
 }
 
+/* header */
 .header {
     background-color: #1f2937;
     position: relative;
 }
 
+/* header logo on the top left */
 .headerLogo {
     font-family: Jost;
     font-weight: bold;
@@ -29,6 +33,7 @@
     float: left;
 }
 
+/* right side links */
 .rightLinks {
     font-family: Jost;
     color: #E5E7EB;
@@ -39,6 +44,7 @@
     padding: 15px;
 }
 
+/* for the header left side */
 .headerContainer1 {
     display: flex;
     flex-direction: column;
@@ -49,6 +55,7 @@
     width: 50%;
 }
 
+/* header title (big letters) */
 .headerTitle {
     font-family: Supreme;
     font-size: 48px;
@@ -58,6 +65,7 @@
     margin-left: 15px;
 }
 
+/* header small description (small letters) */
 .text {
     font-family: Jost;
     font-size: 18px;
@@ -68,6 +76,7 @@
     
 }
 
+/* header sign up button */
 .signUp {
     margin: 15px;
     background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
@@ -129,17 +138,19 @@
     }
 }
 
+/* header on the right side */
 .headerContainer2 {
     margin: 15px;
     display: flex;
     padding: 50px;
 }
 
-
+/* second part of the page*/
 .info {
     margin: 100px;
 }
 
+/* title on the second part of the page */
 .textInfo {
     font-family: Supreme;
     color: #1f2937;
@@ -147,9 +158,9 @@
     font-weight: bolder;
     display: flex;
     justify-content: center;
-
 }
 
+/* Images of the second part of the page */
 .infoImages {
     display: flex;
     justify-content: space-around;
@@ -157,6 +168,7 @@
     
 }
 
+/* bottom text of the images */
 .picText {
     font-size: 18px;
     color: #1f2937;
@@ -165,11 +177,13 @@
     
 }
 
+/* Third part of the page */
 .quotes {
     background-color: #E5E7EB;
     padding: 100px;
 }
 
+/* reviews left */
 .bigText {
     font-family: JakartaLightItalic;
     color: #1f2937;
@@ -179,6 +193,7 @@
     
 }
 
+/* sign of the review */
 .signQuotes {
     color: #1f2937;
     font-size: 18px;
@@ -188,15 +203,19 @@
     
 }
 
+/* Fourth part of the page */
 .boxContainer {
     background-color: #ffffff;
 }
 
+/* blue box with the rounded corners*/
 .box {
     background-color: #3882f6;
     padding: 100px;
     border-radius: 30px;
 }
+
+/* text inside the blue box */
 .boxText {
     background-color: #3882f6;
     color: #E5E7EB;
@@ -205,6 +224,7 @@
     align-items: flex-start;
 }
 
+/* small text inside the blue box */
 .boxTextSmall {
     background-color: #3882f6;
     color: #E5E7EB;
@@ -213,6 +233,7 @@
     align-content: flex-start;
 }
 
+/* blue box button */
 .contButton {
     display: flex;
     align-items: flex-end;
@@ -273,6 +294,7 @@
     background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 
+/* footer */
 .footer {
     background-color: #1f2937;
     color: #E5E7EB;
@@ -283,14 +305,17 @@
     border-radius: 15px;
 }
 
+/* getting rid of bullets of the list */
 ul {
     list-style-type: none;
 }
 
+/* getting rid of the underline in the links */
 a:link {
     text-decoration: none;
 }
 
+/* changing the color of the visited links */
 a:visited {
     color: #E5E7EB;
 }
