@@ -313,6 +313,7 @@ ul {
 /* getting rid of the underline in the links */
 a:link {
     text-decoration: none;
+    color: #E5E7EB;
 }
 
 /* changing the color of the visited links */
